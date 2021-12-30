@@ -20,7 +20,7 @@ import team3647.frc2021.subsystems.Drivetrain;
  * subsystems, commands, and button mappings) should be declared here.
  */
 public class RobotContainer {
-  private final Drivetrain dt = new Drivetrain(Constants.leftConfig, Constants.rightConfig);
+  private final Drivetrain dt = new Drivetrain(Constants.leftPin, Constants.rightPin);
   private final Joysticks mainController = new Joysticks(0);
   // The robot's subsystems and commands are defined here...
 

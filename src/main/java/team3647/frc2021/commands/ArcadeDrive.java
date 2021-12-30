@@ -23,7 +23,7 @@ public class ArcadeDrive extends CommandBase {
 
     @Override
     public void execute() {
-        dt.ArcadeDrive(this.throttle.getAsDouble(), this.turn.getAsDouble());
+        dt.ArcadeDrive(this.throttle.getAsDouble(), this.turn.getAsDouble(), false);
     }
 
     @Override

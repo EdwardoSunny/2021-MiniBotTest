@@ -7,6 +7,7 @@ package team3647.frc2021.robot;
 import com.revrobotics.CANSparkMax.IdleMode;
 
 import team3647.lib.drivers.SparkMaxFactory;
+import team3647.lib.drivers.VictorSPXFactory;
 
 /**
  * The Constants class provides a convenient place for teams to hold robot-wide
@@ -19,16 +20,7 @@ import team3647.lib.drivers.SparkMaxFactory;
  * wherever the constants are needed, to reduce verbosity.
  */
 public final class Constants {
-    public static final IdleMode robotIdleMode = IdleMode.kBrake;
     public static final int leftPin = 0; //arb, need to find
     public static final int rightPin = 1; //arb, need to find
-    public static final int maxCurrentLim = 60;
-    public static final int stallCurrent = 35;
-
-    
-    public static final SparkMaxFactory.Configuration leftConfig = 
-        new SparkMaxFactory.Configuration(leftPin, false).currentLimiting(true, maxCurrentLim, stallCurrent).idleMode(IdleMode.kBrake).voltageCompensation(true,12);
-        public static final SparkMaxFactory.Configuration rightConfig = 
-        new SparkMaxFactory.Configuration(leftPin, true).currentLimiting(true, maxCurrentLim, stallCurrent).idleMode(IdleMode.kBrake).voltageCompensation(true,12);
 
 }
